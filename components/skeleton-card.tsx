@@ -11,7 +11,10 @@ export const SkeletonCard = () => {
     <Card className="flex flex-col justify-between">
       <CardHeader className="flex-row items-center gap-4">
         <Skeleton className="h-12 w-12 rounded-full" />
-        <Skeleton className="h-6 flex-grow" />
+        <div className="flex-grow space-y-3">
+          <Skeleton className="h-4" />
+          <Skeleton className="h-3 w-1/2" />
+        </div>
       </CardHeader>
       <CardContent className="space-y-4">
         <Skeleton className="h-4 flex-grow" />
@@ -19,7 +22,7 @@ export const SkeletonCard = () => {
         <Skeleton className="h-4 w-1/2" />
       </CardContent>
       <CardFooter>
-        <Skeleton className="h-10 w-28" />
+        <Skeleton className="h-8 w-28" />
       </CardFooter>
     </Card>
   );
